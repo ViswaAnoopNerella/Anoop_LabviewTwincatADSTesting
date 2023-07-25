@@ -1,0 +1,387 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<SymbolControlItems>
+  <SymbolControlItem GroupName="ADS Write" GroupDescription="Parameters for ADS Write command">
+    <Parameters>
+      <Parameter Name="Name">GVL_LabviewDataShare.in_bAardvarkBoardError_labview</Parameter>
+      <Parameter Name="SymbolName">GVL_LabviewDataShare.in_bAardvarkBoardError_labview</Parameter>
+      <Parameter Name="SymbolType">BOOL</Parameter>
+      <Parameter Name="SymbolGuid">
+      </Parameter>
+      <Parameter Name="AmsNetId">192.168.0.20.1.1</Parameter>
+      <Parameter Name="Port">851</Parameter>
+      <Parameter Name="IndexGroup">#x0</Parameter>
+      <Parameter Name="IndexOffset">#x0</Parameter>
+      <Parameter Name="BitSize">8</Parameter>
+      <Parameter Name="CycleTime [ms]">5</Parameter>
+      <Parameter Name="Timeout [ms]">1000</Parameter>
+    </Parameters>
+  </SymbolControlItem>
+  <SymbolControlItem GroupName="ADS Write" GroupDescription="Parameters for ADS Write command">
+    <Parameters>
+      <Parameter Name="Name">GVL_LabviewDataShare.in_bAsic1CalibrationCompleted_labview</Parameter>
+      <Parameter Name="SymbolName">GVL_LabviewDataShare.in_bAsic1CalibrationCompleted_labview</Parameter>
+      <Parameter Name="SymbolType">BOOL</Parameter>
+      <Parameter Name="SymbolGuid">
+      </Parameter>
+      <Parameter Name="AmsNetId">192.168.0.20.1.1</Parameter>
+      <Parameter Name="Port">851</Parameter>
+      <Parameter Name="IndexGroup">#x0</Parameter>
+      <Parameter Name="IndexOffset">#x0</Parameter>
+      <Parameter Name="BitSize">8</Parameter>
+      <Parameter Name="CycleTime [ms]">5</Parameter>
+      <Parameter Name="Timeout [ms]">1000</Parameter>
+    </Parameters>
+  </SymbolControlItem>
+  <SymbolControlItem GroupName="ADS Write" GroupDescription="Parameters for ADS Write command">
+    <Parameters>
+      <Parameter Name="Name">GVL_LabviewDataShare.in_bAsic1CalibrationInProgress_labview</Parameter>
+      <Parameter Name="SymbolName">GVL_LabviewDataShare.in_bAsic1CalibrationInProgress_labview</Parameter>
+      <Parameter Name="SymbolType">BOOL</Parameter>
+      <Parameter Name="SymbolGuid">
+      </Parameter>
+      <Parameter Name="AmsNetId">192.168.0.20.1.1</Parameter>
+      <Parameter Name="Port">851</Parameter>
+      <Parameter Name="IndexGroup">#x0</Parameter>
+      <Parameter Name="IndexOffset">#x0</Parameter>
+      <Parameter Name="BitSize">8</Parameter>
+      <Parameter Name="CycleTime [ms]">5</Parameter>
+      <Parameter Name="Timeout [ms]">1000</Parameter>
+    </Parameters>
+  </SymbolControlItem>
+  <SymbolControlItem GroupName="ADS Write" GroupDescription="Parameters for ADS Write command">
+    <Parameters>
+      <Parameter Name="Name">GVL_LabviewDataShare.in_bAsic1CalibrationSuccess_labview</Parameter>
+      <Parameter Name="SymbolName">GVL_LabviewDataShare.in_bAsic1CalibrationSuccess_labview</Parameter>
+      <Parameter Name="SymbolType">BOOL</Parameter>
+      <Parameter Name="SymbolGuid">
+      </Parameter>
+      <Parameter Name="AmsNetId">192.168.0.20.1.1</Parameter>
+      <Parameter Name="Port">851</Parameter>
+      <Parameter Name="IndexGroup">#x0</Parameter>
+      <Parameter Name="IndexOffset">#x0</Parameter>
+      <Parameter Name="BitSize">8</Parameter>
+      <Parameter Name="CycleTime [ms]">5</Parameter>
+      <Parameter Name="Timeout [ms]">1000</Parameter>
+    </Parameters>
+  </SymbolControlItem>
+  <SymbolControlItem GroupName="ADS Write" GroupDescription="Parameters for ADS Write command">
+    <Parameters>
+      <Parameter Name="Name">GVL_LabviewDataShare.in_bAsic1FFTCompleted_labview</Parameter>
+      <Parameter Name="SymbolName">GVL_LabviewDataShare.in_bAsic1FFTCompleted_labview</Parameter>
+      <Parameter Name="SymbolType">BOOL</Parameter>
+      <Parameter Name="SymbolGuid">
+      </Parameter>
+      <Parameter Name="AmsNetId">192.168.0.20.1.1</Parameter>
+      <Parameter Name="Port">851</Parameter>
+      <Parameter Name="IndexGroup">#x0</Parameter>
+      <Parameter Name="IndexOffset">#x0</Parameter>
+      <Parameter Name="BitSize">8</Parameter>
+      <Parameter Name="CycleTime [ms]">5</Parameter>
+      <Parameter Name="Timeout [ms]">1000</Parameter>
+    </Parameters>
+  </SymbolControlItem>
+  <SymbolControlItem GroupName="ADS Write" GroupDescription="Parameters for ADS Write command">
+    <Parameters>
+      <Parameter Name="Name">GVL_LabviewDataShare.in_bAsic1FFTInProgress_labview</Parameter>
+      <Parameter Name="SymbolName">GVL_LabviewDataShare.in_bAsic1FFTInProgress_labview</Parameter>
+      <Parameter Name="SymbolType">BOOL</Parameter>
+      <Parameter Name="SymbolGuid">
+      </Parameter>
+      <Parameter Name="AmsNetId">192.168.0.20.1.1</Parameter>
+      <Parameter Name="Port">851</Parameter>
+      <Parameter Name="IndexGroup">#x0</Parameter>
+      <Parameter Name="IndexOffset">#x0</Parameter>
+      <Parameter Name="BitSize">8</Parameter>
+      <Parameter Name="CycleTime [ms]">5</Parameter>
+      <Parameter Name="Timeout [ms]">1000</Parameter>
+    </Parameters>
+  </SymbolControlItem>
+  <SymbolControlItem GroupName="ADS Write" GroupDescription="Parameters for ADS Write command">
+    <Parameters>
+      <Parameter Name="Name">GVL_LabviewDataShare.in_bAsic1FFTSuccess_labview</Parameter>
+      <Parameter Name="SymbolName">GVL_LabviewDataShare.in_bAsic1FFTSuccess_labview</Parameter>
+      <Parameter Name="SymbolType">BOOL</Parameter>
+      <Parameter Name="SymbolGuid">
+      </Parameter>
+      <Parameter Name="AmsNetId">192.168.0.20.1.1</Parameter>
+      <Parameter Name="Port">851</Parameter>
+      <Parameter Name="IndexGroup">#x0</Parameter>
+      <Parameter Name="IndexOffset">#x0</Parameter>
+      <Parameter Name="BitSize">8</Parameter>
+      <Parameter Name="CycleTime [ms]">5</Parameter>
+      <Parameter Name="Timeout [ms]">1000</Parameter>
+    </Parameters>
+  </SymbolControlItem>
+  <SymbolControlItem GroupName="ADS Write" GroupDescription="Parameters for ADS Write command">
+    <Parameters>
+      <Parameter Name="Name">GVL_LabviewDataShare.in_bAsic2CalibrationCompleted_labview</Parameter>
+      <Parameter Name="SymbolName">GVL_LabviewDataShare.in_bAsic2CalibrationCompleted_labview</Parameter>
+      <Parameter Name="SymbolType">BOOL</Parameter>
+      <Parameter Name="SymbolGuid">
+      </Parameter>
+      <Parameter Name="AmsNetId">192.168.0.20.1.1</Parameter>
+      <Parameter Name="Port">851</Parameter>
+      <Parameter Name="IndexGroup">#x0</Parameter>
+      <Parameter Name="IndexOffset">#x0</Parameter>
+      <Parameter Name="BitSize">8</Parameter>
+      <Parameter Name="CycleTime [ms]">5</Parameter>
+      <Parameter Name="Timeout [ms]">1000</Parameter>
+    </Parameters>
+  </SymbolControlItem>
+  <SymbolControlItem GroupName="ADS Write" GroupDescription="Parameters for ADS Write command">
+    <Parameters>
+      <Parameter Name="Name">GVL_LabviewDataShare.in_bAsic2CalibrationInProgress_labview</Parameter>
+      <Parameter Name="SymbolName">GVL_LabviewDataShare.in_bAsic2CalibrationInProgress_labview</Parameter>
+      <Parameter Name="SymbolType">BOOL</Parameter>
+      <Parameter Name="SymbolGuid">
+      </Parameter>
+      <Parameter Name="AmsNetId">192.168.0.20.1.1</Parameter>
+      <Parameter Name="Port">851</Parameter>
+      <Parameter Name="IndexGroup">#x0</Parameter>
+      <Parameter Name="IndexOffset">#x0</Parameter>
+      <Parameter Name="BitSize">8</Parameter>
+      <Parameter Name="CycleTime [ms]">5</Parameter>
+      <Parameter Name="Timeout [ms]">1000</Parameter>
+    </Parameters>
+  </SymbolControlItem>
+  <SymbolControlItem GroupName="ADS Write" GroupDescription="Parameters for ADS Write command">
+    <Parameters>
+      <Parameter Name="Name">GVL_LabviewDataShare.in_bAsic2CalibrationSuccess_labview</Parameter>
+      <Parameter Name="SymbolName">GVL_LabviewDataShare.in_bAsic2CalibrationSuccess_labview</Parameter>
+      <Parameter Name="SymbolType">BOOL</Parameter>
+      <Parameter Name="SymbolGuid">
+      </Parameter>
+      <Parameter Name="AmsNetId">192.168.0.20.1.1</Parameter>
+      <Parameter Name="Port">851</Parameter>
+      <Parameter Name="IndexGroup">#x0</Parameter>
+      <Parameter Name="IndexOffset">#x0</Parameter>
+      <Parameter Name="BitSize">8</Parameter>
+      <Parameter Name="CycleTime [ms]">5</Parameter>
+      <Parameter Name="Timeout [ms]">1000</Parameter>
+    </Parameters>
+  </SymbolControlItem>
+  <SymbolControlItem GroupName="ADS Write" GroupDescription="Parameters for ADS Write command">
+    <Parameters>
+      <Parameter Name="Name">GVL_LabviewDataShare.in_bAsic2FFTCompleted_labview</Parameter>
+      <Parameter Name="SymbolName">GVL_LabviewDataShare.in_bAsic2FFTCompleted_labview</Parameter>
+      <Parameter Name="SymbolType">BOOL</Parameter>
+      <Parameter Name="SymbolGuid">
+      </Parameter>
+      <Parameter Name="AmsNetId">192.168.0.20.1.1</Parameter>
+      <Parameter Name="Port">851</Parameter>
+      <Parameter Name="IndexGroup">#x0</Parameter>
+      <Parameter Name="IndexOffset">#x0</Parameter>
+      <Parameter Name="BitSize">8</Parameter>
+      <Parameter Name="CycleTime [ms]">5</Parameter>
+      <Parameter Name="Timeout [ms]">1000</Parameter>
+    </Parameters>
+  </SymbolControlItem>
+  <SymbolControlItem GroupName="ADS Write" GroupDescription="Parameters for ADS Write command">
+    <Parameters>
+      <Parameter Name="Name">GVL_LabviewDataShare.in_bAsic2FFTInProgress_labview</Parameter>
+      <Parameter Name="SymbolName">GVL_LabviewDataShare.in_bAsic2FFTInProgress_labview</Parameter>
+      <Parameter Name="SymbolType">BOOL</Parameter>
+      <Parameter Name="SymbolGuid">
+      </Parameter>
+      <Parameter Name="AmsNetId">192.168.0.20.1.1</Parameter>
+      <Parameter Name="Port">851</Parameter>
+      <Parameter Name="IndexGroup">#x0</Parameter>
+      <Parameter Name="IndexOffset">#x0</Parameter>
+      <Parameter Name="BitSize">8</Parameter>
+      <Parameter Name="CycleTime [ms]">5</Parameter>
+      <Parameter Name="Timeout [ms]">1000</Parameter>
+    </Parameters>
+  </SymbolControlItem>
+  <SymbolControlItem GroupName="ADS Write" GroupDescription="Parameters for ADS Write command">
+    <Parameters>
+      <Parameter Name="Name">GVL_LabviewDataShare.in_bAsic2FFTSuccess_labview</Parameter>
+      <Parameter Name="SymbolName">GVL_LabviewDataShare.in_bAsic2FFTSuccess_labview</Parameter>
+      <Parameter Name="SymbolType">BOOL</Parameter>
+      <Parameter Name="SymbolGuid">
+      </Parameter>
+      <Parameter Name="AmsNetId">192.168.0.20.1.1</Parameter>
+      <Parameter Name="Port">851</Parameter>
+      <Parameter Name="IndexGroup">#x0</Parameter>
+      <Parameter Name="IndexOffset">#x0</Parameter>
+      <Parameter Name="BitSize">8</Parameter>
+      <Parameter Name="CycleTime [ms]">5</Parameter>
+      <Parameter Name="Timeout [ms]">1000</Parameter>
+    </Parameters>
+  </SymbolControlItem>
+  <SymbolControlItem GroupName="ADS Write" GroupDescription="Parameters for ADS Write command">
+    <Parameters>
+      <Parameter Name="Name">GVL_LabviewDataShare.in_bCalResultsDBStoreSuccess_labview</Parameter>
+      <Parameter Name="SymbolName">GVL_LabviewDataShare.in_bCalResultsDBStoreSuccess_labview</Parameter>
+      <Parameter Name="SymbolType">BOOL</Parameter>
+      <Parameter Name="SymbolGuid">
+      </Parameter>
+      <Parameter Name="AmsNetId">192.168.0.20.1.1</Parameter>
+      <Parameter Name="Port">851</Parameter>
+      <Parameter Name="IndexGroup">#x0</Parameter>
+      <Parameter Name="IndexOffset">#x0</Parameter>
+      <Parameter Name="BitSize">8</Parameter>
+      <Parameter Name="CycleTime [ms]">5</Parameter>
+      <Parameter Name="Timeout [ms]">1000</Parameter>
+    </Parameters>
+  </SymbolControlItem>
+  <SymbolControlItem GroupName="ADS Write" GroupDescription="Parameters for ADS Write command">
+    <Parameters>
+      <Parameter Name="Name">GVL_LabviewDataShare.in_bFFTResultsDBStoreSuccess_labview</Parameter>
+      <Parameter Name="SymbolName">GVL_LabviewDataShare.in_bFFTResultsDBStoreSuccess_labview</Parameter>
+      <Parameter Name="SymbolType">BOOL</Parameter>
+      <Parameter Name="SymbolGuid">
+      </Parameter>
+      <Parameter Name="AmsNetId">192.168.0.20.1.1</Parameter>
+      <Parameter Name="Port">851</Parameter>
+      <Parameter Name="IndexGroup">#x0</Parameter>
+      <Parameter Name="IndexOffset">#x0</Parameter>
+      <Parameter Name="BitSize">8</Parameter>
+      <Parameter Name="CycleTime [ms]">5</Parameter>
+      <Parameter Name="Timeout [ms]">1000</Parameter>
+    </Parameters>
+  </SymbolControlItem>
+  <SymbolControlItem GroupName="ADS Write" GroupDescription="Parameters for ADS Write command">
+    <Parameters>
+      <Parameter Name="Name">GVL_LabviewDataShare.in_bLabviewHandshakeBit</Parameter>
+      <Parameter Name="SymbolName">GVL_LabviewDataShare.in_bLabviewHandshakeBit</Parameter>
+      <Parameter Name="SymbolType">BOOL</Parameter>
+      <Parameter Name="SymbolGuid">
+      </Parameter>
+      <Parameter Name="AmsNetId">192.168.0.20.1.1</Parameter>
+      <Parameter Name="Port">851</Parameter>
+      <Parameter Name="IndexGroup">#x0</Parameter>
+      <Parameter Name="IndexOffset">#x0</Parameter>
+      <Parameter Name="BitSize">8</Parameter>
+      <Parameter Name="CycleTime [ms]">5</Parameter>
+      <Parameter Name="Timeout [ms]">1000</Parameter>
+    </Parameters>
+  </SymbolControlItem>
+  <SymbolControlItem GroupName="ADS Write" GroupDescription="Parameters for ADS Write command">
+    <Parameters>
+      <Parameter Name="Name">GVL_LabviewDataShare.in_bLabviewResetComplete_labview</Parameter>
+      <Parameter Name="SymbolName">GVL_LabviewDataShare.in_bLabviewResetComplete_labview</Parameter>
+      <Parameter Name="SymbolType">BOOL</Parameter>
+      <Parameter Name="SymbolGuid">
+      </Parameter>
+      <Parameter Name="AmsNetId">192.168.0.20.1.1</Parameter>
+      <Parameter Name="Port">851</Parameter>
+      <Parameter Name="IndexGroup">#x0</Parameter>
+      <Parameter Name="IndexOffset">#x0</Parameter>
+      <Parameter Name="BitSize">8</Parameter>
+      <Parameter Name="CycleTime [ms]">5</Parameter>
+      <Parameter Name="Timeout [ms]">1000</Parameter>
+    </Parameters>
+  </SymbolControlItem>
+  <SymbolControlItem GroupName="ADS Write" GroupDescription="Parameters for ADS Write command">
+    <Parameters>
+      <Parameter Name="Name">GVL_LabviewDataShare.in_bLabviewResetSuccess_labview</Parameter>
+      <Parameter Name="SymbolName">GVL_LabviewDataShare.in_bLabviewResetSuccess_labview</Parameter>
+      <Parameter Name="SymbolType">BOOL</Parameter>
+      <Parameter Name="SymbolGuid">
+      </Parameter>
+      <Parameter Name="AmsNetId">192.168.0.20.1.1</Parameter>
+      <Parameter Name="Port">851</Parameter>
+      <Parameter Name="IndexGroup">#x0</Parameter>
+      <Parameter Name="IndexOffset">#x0</Parameter>
+      <Parameter Name="BitSize">8</Parameter>
+      <Parameter Name="CycleTime [ms]">5</Parameter>
+      <Parameter Name="Timeout [ms]">1000</Parameter>
+    </Parameters>
+  </SymbolControlItem>
+  <SymbolControlItem GroupName="ADS Write" GroupDescription="Parameters for ADS Write command">
+    <Parameters>
+      <Parameter Name="Name">GVL_LabviewDataShare.in_bNIDaqError_labview</Parameter>
+      <Parameter Name="SymbolName">GVL_LabviewDataShare.in_bNIDaqError_labview</Parameter>
+      <Parameter Name="SymbolType">BOOL</Parameter>
+      <Parameter Name="SymbolGuid">
+      </Parameter>
+      <Parameter Name="AmsNetId">192.168.0.20.1.1</Parameter>
+      <Parameter Name="Port">851</Parameter>
+      <Parameter Name="IndexGroup">#x0</Parameter>
+      <Parameter Name="IndexOffset">#x0</Parameter>
+      <Parameter Name="BitSize">8</Parameter>
+      <Parameter Name="CycleTime [ms]">5</Parameter>
+      <Parameter Name="Timeout [ms]">1000</Parameter>
+    </Parameters>
+  </SymbolControlItem>
+  <SymbolControlItem GroupName="ADS Write" GroupDescription="Parameters for ADS Write command">
+    <Parameters>
+      <Parameter Name="Name">GVL_LabviewDataShare.in_bPTC04BoardError_labview</Parameter>
+      <Parameter Name="SymbolName">GVL_LabviewDataShare.in_bPTC04BoardError_labview</Parameter>
+      <Parameter Name="SymbolType">BOOL</Parameter>
+      <Parameter Name="SymbolGuid">
+      </Parameter>
+      <Parameter Name="AmsNetId">192.168.0.20.1.1</Parameter>
+      <Parameter Name="Port">851</Parameter>
+      <Parameter Name="IndexGroup">#x0</Parameter>
+      <Parameter Name="IndexOffset">#x0</Parameter>
+      <Parameter Name="BitSize">8</Parameter>
+      <Parameter Name="CycleTime [ms]">5</Parameter>
+      <Parameter Name="Timeout [ms]">1000</Parameter>
+    </Parameters>
+  </SymbolControlItem>
+  <SymbolControlItem GroupName="ADS Write" GroupDescription="Parameters for ADS Write command">
+    <Parameters>
+      <Parameter Name="Name">GVL_LabviewDataShare.in_bStartupInitializationCompleted_labview</Parameter>
+      <Parameter Name="SymbolName">GVL_LabviewDataShare.in_bStartupInitializationCompleted_labview</Parameter>
+      <Parameter Name="SymbolType">BOOL</Parameter>
+      <Parameter Name="SymbolGuid">
+      </Parameter>
+      <Parameter Name="AmsNetId">192.168.0.20.1.1</Parameter>
+      <Parameter Name="Port">851</Parameter>
+      <Parameter Name="IndexGroup">#x0</Parameter>
+      <Parameter Name="IndexOffset">#x0</Parameter>
+      <Parameter Name="BitSize">8</Parameter>
+      <Parameter Name="CycleTime [ms]">5</Parameter>
+      <Parameter Name="Timeout [ms]">1000</Parameter>
+    </Parameters>
+  </SymbolControlItem>
+  <SymbolControlItem GroupName="ADS Write" GroupDescription="Parameters for ADS Write command">
+    <Parameters>
+      <Parameter Name="Name">GVL_LabviewDataShare.in_bStartupInitializationSuccess_labview</Parameter>
+      <Parameter Name="SymbolName">GVL_LabviewDataShare.in_bStartupInitializationSuccess_labview</Parameter>
+      <Parameter Name="SymbolType">BOOL</Parameter>
+      <Parameter Name="SymbolGuid">
+      </Parameter>
+      <Parameter Name="AmsNetId">192.168.0.20.1.1</Parameter>
+      <Parameter Name="Port">851</Parameter>
+      <Parameter Name="IndexGroup">#x0</Parameter>
+      <Parameter Name="IndexOffset">#x0</Parameter>
+      <Parameter Name="BitSize">8</Parameter>
+      <Parameter Name="CycleTime [ms]">5</Parameter>
+      <Parameter Name="Timeout [ms]">1000</Parameter>
+    </Parameters>
+  </SymbolControlItem>
+  <SymbolControlItem GroupName="ADS Write" GroupDescription="Parameters for ADS Write command">
+    <Parameters>
+      <Parameter Name="Name">GVL_LabviewDataShare.in_strAsic1SerialNo_labview</Parameter>
+      <Parameter Name="SymbolName">GVL_LabviewDataShare.in_strAsic1SerialNo_labview</Parameter>
+      <Parameter Name="SymbolType">STRING(80)</Parameter>
+      <Parameter Name="SymbolGuid">
+      </Parameter>
+      <Parameter Name="AmsNetId">192.168.0.20.1.1</Parameter>
+      <Parameter Name="Port">851</Parameter>
+      <Parameter Name="IndexGroup">#x0</Parameter>
+      <Parameter Name="IndexOffset">#x0</Parameter>
+      <Parameter Name="BitSize">648</Parameter>
+      <Parameter Name="CycleTime [ms]">5</Parameter>
+      <Parameter Name="Timeout [ms]">1000</Parameter>
+    </Parameters>
+  </SymbolControlItem>
+  <SymbolControlItem GroupName="ADS Write" GroupDescription="Parameters for ADS Write command">
+    <Parameters>
+      <Parameter Name="Name">GVL_LabviewDataShare.in_strAsic2SerialNo_labview</Parameter>
+      <Parameter Name="SymbolName">GVL_LabviewDataShare.in_strAsic2SerialNo_labview</Parameter>
+      <Parameter Name="SymbolType">STRING(80)</Parameter>
+      <Parameter Name="SymbolGuid">
+      </Parameter>
+      <Parameter Name="AmsNetId">192.168.0.20.1.1</Parameter>
+      <Parameter Name="Port">851</Parameter>
+      <Parameter Name="IndexGroup">#x0</Parameter>
+      <Parameter Name="IndexOffset">#x0</Parameter>
+      <Parameter Name="BitSize">648</Parameter>
+      <Parameter Name="CycleTime [ms]">5</Parameter>
+      <Parameter Name="Timeout [ms]">1000</Parameter>
+    </Parameters>
+  </SymbolControlItem>
+</SymbolControlItems>

@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <GVL Name="GVL_LabviewDataShare" Id="{ea064c3c-d988-480b-aa4f-66f6751e2460}">
+    <Declaration><![CDATA[{attribute 'qualified_only'}
+VAR_GLOBAL
+	
+	//Cal Station Variables	
+	out_bInitializeStartupRoutine : BOOL;
+	
+	 // Beckhoff to Labview MQTT Info Transfer - Current Sensor DeviceID
+    out_strDeviceID_labview : STRING;
+
+    // Beckhoff to Labview MQTT Info Transfer - Current Lot running on the Machine
+    out_strLotNo_labview : STRING;
+
+    // Beckhoff to Labview MQTT Info Transfer - 1) Calibration 2) FFT
+    out_strTestMode_labview : STRING;
+
+    // Beckhoff to Labview MQTT Info Transfer - Interrupt Signal from Beckhoff to Labview to Abort the Calibration Process
+    out_bAbortCalibrationSequence_labview : BOOL;
+
+    // Beckhoff to Labview MQTT Info Transfer - Boolean to Indicate if the current sequence are for Master Parts or not
+    out_bMasterSequenceActive_labview : BOOL;
+
+    // Beckhoff to Labview MQTT Info Transfer - Boolean indicating the Beckhoff is Active
+    out_bBeckhoffHandshakeBit_labview : BOOL;
+
+    // Beckhoff to Labview MQTT Info Transfer - Boolean to Indicate if the current Sensor is Dual Asic or Single ASIC
+    out_bDualAsic_labview : BOOL;
+
+    // Beckhoff to Labview MQTT Info Transfer - This bit is to indicate that machine has been reset and now in starting routine
+    out_bInitializeStartupRoutine_labview : BOOL;
+
+    // Beckhoff to Labview MQTT Info Transfer - This bit is to indicate that machine is in reset state routine
+    out_bRestLabviewRoutine_labview : BOOL;
+
+    // Labview to Beckhoff MQTT Info Transfer - Asic 1 Serial No.
+    in_strAsic1SerialNo_labview : STRING;
+
+    // Labview to Beckhoff MQTT Info Transfer - Boolean Indicating Asic 1 Calibration Status Success or not
+    in_bAsic1CalibrationSuccess_labview : BOOL;
+
+    // Labview to Beckhoff MQTT Info Transfer - Boolean indicating Asic 1 Calibration In progress
+    in_bAsic1CalibrationInProgress_labview : BOOL;
+
+    // Labview to Beckhoff MQTT Info Transfer - Boolean indicating Asic 1 Calibration completed successfully
+    in_bAsic1CalibrationCompleted_labview : BOOL;
+
+    // Labview to Beckhoff MQTT Info Transfer - Asic 2 Serial No.
+    in_strAsic2SerialNo_labview : STRING;
+
+    // Labview to Beckhoff MQTT Info Transfer - Boolean Indicating Asic 2 Calibration Status Success or not
+    in_bAsic2CalibrationSuccess_labview : BOOL;
+
+    // Labview to Beckhoff MQTT Info Transfer - Boolean indicating Asic 2 Calibration In progress
+    in_bAsic2CalibrationInProgress_labview : BOOL;
+
+    // Labview to Beckhoff MQTT Info Transfer - Boolean indicating Asic 2 Calibration completed successfully
+    in_bAsic2CalibrationCompleted_labview : BOOL;
+
+    // Labview to Beckhoff MQTT Info Transfer - Boolean Indicating if there is an error in Aardvark Board present in the calibration station
+    in_bAardvarkBoardError_labview : BOOL;
+
+    // Labview to Beckhoff MQTT Info Transfer - Boolean indicating if there is an error in PTC04 board present in the Calibration station
+    in_bPTC04BoardError_labview : BOOL;
+
+    // Labview to Beckhoff MQTT Info Transfer - Boolean indicating if there is an error in NIDaq board present in the Calibration station
+    in_bNIDaqError_labview : BOOL;
+
+    // Labview to Beckhoff MQTT Info Transfer - Boolean indicating the Labview is Active
+    in_bLabviewHandshakeBit : BOOL;
+
+    // Labview to Beckhoff MQTT Info Transfer - Boolean indicating that Calibration Results have been sent to Database Successfully
+    in_bCalResultsDBStoreSuccess_labview : BOOL;
+
+    // Labview to Beckhoff MQTT Info Transfer - This boolean indicates that Startup Initialization routine is now successful
+    in_bStartupInitializationSuccess_labview : BOOL;
+
+    // Labview to Beckhoff MQTT Info Transfer - This boolean indicates that Startup Initialization routine is now completed
+    in_bStartupInitializationCompleted_labview : BOOL;
+
+    // Labview to Beckhoff MQTT Info Transfer - This boolean indicates that Reset routine is now completed
+    in_bLabviewResetComplete_labview : BOOL;
+
+    // Labview to Beckhoff MQTT Info Transfer - This boolean indicates that Reset routine is now successful
+    in_bLabviewResetSuccess_labview : BOOL;
+	
+	//FFT Variables
+	
+	 // Beckhoff to Labview MQTT Info Transfer - Current Sensor DeviceID
+//    out_strDeviceID_labview: STRING; 
+
+    // Beckhoff to Labview MQTT Info Transfer - Current Lot running on the Machine
+//    out_strLotNo_labview: STRING; 
+
+    // Beckhoff to Labview MQTT Info Transfer - 1) Calibration 2) FFT
+//    out_strTestMode_labview: STRING; 
+
+    // Beckhoff to Labview MQTT Info Transfer - Interrupt Signal from Beckhoff to Labview to Abort the FFT Process
+    out_bAbortFFTSequence_labview: BOOL; 
+
+    // Beckhoff to Labview MQTT Info Transfer - Boolean to Indicate if the current sequence are for Master Parts or not
+//    out_bMasterSequenceActive_labview: BOOL; 
+
+    // Beckhoff to Labview MQTT Info Transfer - Boolean indicating the Beckhoff is Active. Labview program relies on this signal to make sure Beckhoff communication is active. If this is false, Labview assumes that Labview-Beckhoff communication failed
+//    out_bBeckhoffHandshakeBit_labview: BOOL; 
+
+    // Beckhoff to Labview MQTT Info Transfer - Boolean to Indicate if the current Sensor is Dual Asic or Single ASIC
+//    out_bDualAsic_labview: BOOL; 
+
+    // Beckhoff to Labview MQTT Info Transfer - This bit is to indicate that machine has been reset and now in starting routine. Please initialize the labview program and get ready for a next trigger for FFT / characterization.
+//    out_bInitializeStartupRoutine_labview: BOOL; 
+
+    // Beckhoff to Labview MQTT Info Transfer - This bit is to indicate that machine is in reset state routine. Please Reset the labview program and get ready for startup routine trigger
+//    out_bRestLabviewRoutine_labview: BOOL; 
+
+    // Labview to Beckhoff MQTT Info Transfer - Boolean Indicating Asic 1 FFT Status Success or not
+    in_bAsic1FFTSuccess_labview: BOOL; 
+
+    // Labview to Beckhoff MQTT Info Transfer - Boolean indicating Asic 1 FFT In progress
+    in_bAsic1FFTInProgress_labview: BOOL; 
+
+    // Labview to Beckhoff MQTT Info Transfer - Boolean indicating Asic 1 FFT completed successfully
+    in_bAsic1FFTCompleted_labview: BOOL; 
+
+    // Labview to Beckhoff MQTT Info Transfer - Boolean Indicating Asic 2 FFT Status Success or not
+    in_bAsic2FFTSuccess_labview: BOOL; 
+
+    // Labview to Beckhoff MQTT Info Transfer - Boolean indicating Asic 2 FFT In progress
+    in_bAsic2FFTInProgress_labview: BOOL; 
+
+    // Labview to Beckhoff MQTT Info Transfer - Boolean indicating Asic 2 FFT completed successfully
+    in_bAsic2FFTCompleted_labview: BOOL; 
+
+    // Labview to Beckhoff MQTT Info Transfer - Boolean Indicating if there is an error in Aardvark Board present in the FFT station
+//    in_bAardvarkBoardError_labview: BOOL; 
+
+    // Labview to Beckhoff MQTT Info Transfer - Boolean indicating if there is an error in PTC04 board present in the FFT station
+//    in_bPTC04BoardError_labview: BOOL; 
+
+    // Labview to Beckhoff MQTT Info Transfer - Boolean indicating if there is an error in NIDaq board present in the FFT station
+//    in_bNIDaqError_labview: BOOL; 
+
+    // Labview to Beckhoff MQTT Info Transfer - Boolean indicating the Labview is Active. Beckhoff relies on this signal to make sure labview communication is active. If this is false, Beckhoff assumes that Beckhoff Labview communication failed
+//    in_bLabviewHandshakeBit: BOOL; 
+
+    // Labview to Beckhoff MQTT Info Transfer - Boolean indicating that FFT Results have been sent to Database Successfully
+    in_bFFTResultsDBStoreSuccess_labview: BOOL; 
+
+    // Labview to Beckhoff MQTT Info Transfer - This boolean indicates that Startup Initialization routine is now successful
+//    in_bStartupInitializationSuccess_labview: BOOL; 
+
+    // Labview to Beckhoff MQTT Info Transfer - This boolean indicates that Startup Initialization routine is now completed
+//    in_bStartupInitializationCompleted_labview: BOOL; 
+
+    // Labview to Beckhoff MQTT Info Transfer - This boolean indicates that Reset routine is now completed
+//    in_bLabviewResetComplete_labview: BOOL; 
+
+    // Labview to Beckhoff MQTT Info Transfer - This boolean indicates that Reset routine is now successful
+//    in_bLabviewResetSuccess_labview: BOOL; 
+	
+	
+	
+END_VAR]]></Declaration>
+  </GVL>
+</TcPlcObject>

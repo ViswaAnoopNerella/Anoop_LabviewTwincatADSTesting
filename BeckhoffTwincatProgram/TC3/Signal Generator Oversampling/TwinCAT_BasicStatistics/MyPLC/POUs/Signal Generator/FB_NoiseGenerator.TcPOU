@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.12">
+  <POU Name="FB_NoiseGenerator" Id="{e3a801ad-622c-447a-8871-c0fdb6b017cc}" SpecialFunc="None">
+    <Declaration><![CDATA[// generates a random noise signal, typical for disturbance signal. v1.2
+// aParam explained
+// Uniform 		: aParam[1] := min , aParam[2] := max limit
+// Normal	 	: aParam[1] := mean, aParam[2] := standard deviation
+// Exponential 	: aParam[1] := mean, aParam[2] := NA
+// Gamma		: aParam[1] := deg. of freedom (max. 10), aParam[2] := NA (Gamma distribution: summing DOF number of exp. distributed variables)
+// Chi-Squared 	: aParam[1] := mean, aParam[2] := standard deviation (Chi-squared (1DOF) is square of Gaussian Normal)
+FUNCTION_BLOCK FB_NoiseGenerator
+VAR_INPUT
+	bEnable		: BOOL 	:= TRUE;	// set TRUE to generate the specified signal; set FALSE to reset the signal buffer
+	nSeed		: INT	:= 1;	 	// seed value (initial value) for random function
+	aParam		: ARRAY [1..2] OF LREAL := [0,1];	// specific parameter for chosen distribution type (see FB documentation)
+	eDistrType	: E_DistributionType := E_DistributionType.Normal;
+END_VAR
+VAR_IN_OUT
+	aSignal		: ARRAY[1..cOversamples] OF LREAL;
+END_VAR
+VAR_OUTPUT
+	bError		: BOOL;
+END_VAR
+
+VAR
+	bInit			: BOOL := TRUE;
+	nInfiniteValue	: UDINT; // logarithm result is infinite probable caused by a random number of 0.
+
+	nSamples		: UDINT; // array index
+	fbRAND			: DRAND;
+
+	// only for Gamma distribution
+	nDof			: UINT; // array index
+	nMaxDof 		: UINT;		
+END_VAR
+VAR CONSTANT
+	cMaxDofGamma	: UINT := 10;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[IF bEnable THEN
+	IF bInit THEN
+		// Flush out old data
+		MEMSET(ADR(aSignal), 0, SIZEOF(aSignal));
+
+		IF cOversamples > 0 THEN		
+			fbRAND(Seed := nSeed); // initialize DRAND
+			bInit := FALSE;
+		ELSE
+			bError := TRUE;
+		END_IF
+	END_IF
+	
+	// Enable function generator
+	IF NOT bError THEN
+		// random noise: typical for disturbance signal
+		Rand();					
+	END_IF
+ELSE
+	// Flush out old data
+	MEMSET(ADR(aSignal), 0, SIZEOF(aSignal));
+	
+	bInit := TRUE;
+	bError := FALSE;
+END_IF
+]]></ST>
+    </Implementation>
+    <Method Name="Rand" Id="{afefd0d9-0086-4841-b094-d3fe9c2402a0}">
+      <Declaration><![CDATA[METHOD PRIVATE Rand
+VAR_INPUT
+END_VAR
+
+VAR	
+	fX1		: LREAL;
+	fX2		: LREAL;
+	fY1		: LREAL;
+	fLnX1	: LREAL;
+	fLength : LREAL;
+	fD		: LREAL;
+END_VAR
+
+]]></Declaration>
+      <Implementation>
+        <ST><![CDATA[{warning disable C0371}
+
+CASE eDistrType OF	
+	E_DistributionType.Uniform:	
+		fLength := aParam[2] - aParam[1];
+		FOR nSamples := 1 TO cOversamples DO
+			fbRAND(Num => fX1);	
+			aSignal[nSamples] := fX1 * fLength + aParam[1];
+		END_FOR
+		
+	E_DistributionType.Exponential:		
+		FOR nSamples := 1 TO cOversamples DO
+			fbRAND(Num => fX1);
+			IF fX1 = 0 THEN
+				fbRAND(Num => fX1);
+			END_IF
+			fLnX1 := LN(fX1);
+			IF LrealIsFinite(fLnX1) THEN			
+				aSignal[nSamples] := -aParam[1] * fLnX1;
+			ELSE
+				nInfiniteValue := nInfiniteValue + 1;
+				aSignal[nSamples] := aParam[1];
+			END_IF		
+		END_FOR
+		
+	E_DistributionType.Normal:	
+		FOR nSamples := 1 TO cOversamples DO
+			// create 2 uniform distributed variables
+			fbRAND(Num => fX1);
+			IF fX1 = 0 THEN
+				fbRAND(Num => fX1);
+			END_IF		
+			fbRAND(Num => fX2);
+			IF fX2 = 0 THEN
+				fbRAND(Num => fX2);
+			END_IF	
+			// create normal distribution
+			fLnX1 := LN(fX1);
+			IF LrealIsFinite(fLnX1) THEN			
+				IF (fLnX1 < 0) THEN
+					// Box Müller method
+					fY1 := SQRT(-2*fLnX1)*COS(2*PI*fX2);
+//					fY2 := SQRT(-2*LN(fX1))*SIN(2*PI*fX2);	
+				END_IF
+				aSignal[nSamples] := aParam[1] + aParam[2]*fY1;
+			ELSE
+				nInfiniteValue := nInfiniteValue + 1;
+				aSignal[nSamples] := aParam[1];
+			END_IF
+		END_FOR	
+	
+	E_DistributionType.Gamma:		
+		IF LREAL_TO_UINT(aParam[1]) > cMaxDofGamma THEN
+			nMaxDof := cMaxDofGamma;
+		ELSE
+			nMaxDof := LREAL_TO_UINT(aParam[1]);
+		END_IF
+		//		
+		FOR nSamples := 1 TO cOversamples DO
+			aSignal[nSamples] := 0;
+			FOR nDof := 1 TO nMaxDof DO
+				fbRAND(Num => fX1);
+				IF fX1 = 0 THEN
+					fbRAND(Num => fX1);
+				END_IF
+				fLnX1 := LN(fX1);
+				IF LrealIsFinite(fLnX1) THEN
+					aSignal[nSamples] := aSignal[nSamples] - fLnX1;
+				ELSE
+					nInfiniteValue := nInfiniteValue + 1;
+				END_IF		
+			END_FOR	
+		END_FOR
+
+	//  1DOF: square of a single gaussian normal variable
+	E_DistributionType.Chi_squared:
+		FOR nSamples := 1 TO cOversamples DO
+			// create 2 uniform distributed variables
+			fbRAND(Num => fX1);
+			IF fX1 = 0 THEN
+				fbRAND(Num => fX1);
+			END_IF	
+			fbRAND(Num => fX2);
+			IF fX2 = 0 THEN
+				fbRAND(Num => fX2);
+			END_IF	
+			// create normal distribution
+			fLnX1 := LN(fX1);
+			IF LrealIsFinite(fLnX1) THEN				
+				IF (fLnX1 < 0) THEN
+					// Box Müller method
+					fY1 := SQRT(-2*fLnX1)*COS(2*PI*fX2);
+//					fY2 := SQRT(-2*LN(fX1))*SIN(2*PI*fX2);	
+				END_IF	
+				fD := aParam[1] + aParam[2]*fY1;
+			ELSE
+				nInfiniteValue := nInfiniteValue + 1;
+				fD := aParam[1];		
+			END_IF
+			aSignal[nSamples] := fD * fD;
+		END_FOR
+		
+END_CASE
+
+{warning restore C0371}
+]]></ST>
+      </Implementation>
+    </Method>
+    <ObjectProperties>
+      <XmlArchive>
+        <Data>
+          <o xml:space="preserve" t="POUImageProperty">
+            <n n="ImageData" />
+            <v n="TransparencyColor">"White"</v>
+            <v n="MakeTransparent">false</v>
+          </o>
+        </Data>
+        <TypeList>
+          <Type n="Boolean">System.Boolean</Type>
+          <Type n="POUImageProperty">{bb741845-1ec5-4be9-bb0d-2cf7058af574}</Type>
+          <Type n="String">System.String</Type>
+        </TypeList>
+      </XmlArchive>
+    </ObjectProperties>
+    <LineIds Name="FB_NoiseGenerator">
+      <LineId Id="3" Count="24" />
+      <LineId Id="2" Count="0" />
+    </LineIds>
+    <LineIds Name="FB_NoiseGenerator.Rand">
+      <LineId Id="3" Count="12" />
+      <LineId Id="103" Count="2" />
+      <LineId Id="16" Count="12" />
+      <LineId Id="107" Count="1" />
+      <LineId Id="106" Count="0" />
+      <LineId Id="29" Count="0" />
+      <LineId Id="110" Count="1" />
+      <LineId Id="109" Count="0" />
+      <LineId Id="30" Count="25" />
+      <LineId Id="113" Count="1" />
+      <LineId Id="112" Count="0" />
+      <LineId Id="56" Count="13" />
+      <LineId Id="116" Count="1" />
+      <LineId Id="115" Count="0" />
+      <LineId Id="70" Count="0" />
+      <LineId Id="119" Count="1" />
+      <LineId Id="118" Count="0" />
+      <LineId Id="71" Count="18" />
+      <LineId Id="2" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<SymbolControlItems>
+  <SymbolControlItem GroupName="ADS Read" GroupDescription="Parameters for ADS Read command">
+    <Parameters>
+      <Parameter Name="Name">GVL_LabviewDataShare.out_strTestMode_labview</Parameter>
+      <Parameter Name="SymbolName">GVL_LabviewDataShare.out_strTestMode_labview</Parameter>
+      <Parameter Name="SymbolType">STRING(80)</Parameter>
+      <Parameter Name="SymbolGuid">
+      </Parameter>
+      <Parameter Name="AmsNetId">192.168.0.20.1.1</Parameter>
+      <Parameter Name="Port">851</Parameter>
+      <Parameter Name="IndexGroup">#x0</Parameter>
+      <Parameter Name="IndexOffset">#x0</Parameter>
+      <Parameter Name="BitSize">648</Parameter>
+      <Parameter Name="CycleTime [ms]">5</Parameter>
+      <Parameter Name="Transmode">3</Parameter>
+      <Parameter Name="Timeout [ms]">1000</Parameter>
+      <Parameter Name="TCBufferSize [Samples]">10</Parameter>
+      <Parameter Name="LVBufferSize [Samples]">50</Parameter>
+      <Parameter Name="Expected min delay [ms]">250</Parameter>
+    </Parameters>
+  </SymbolControlItem>
+  <SymbolControlItem GroupName="ADS Read" GroupDescription="Parameters for ADS Read command">
+    <Parameters>
+      <Parameter Name="Name">GVL_LabviewDataShare.out_bAbortFFTSequence_labview</Parameter>
+      <Parameter Name="SymbolName">GVL_LabviewDataShare.out_bAbortFFTSequence_labview</Parameter>
+      <Parameter Name="SymbolType">BOOL</Parameter>
+      <Parameter Name="SymbolGuid">
+      </Parameter>
+      <Parameter Name="AmsNetId">192.168.0.20.1.1</Parameter>
+      <Parameter Name="Port">851</Parameter>
+      <Parameter Name="IndexGroup">#x0</Parameter>
+      <Parameter Name="IndexOffset">#x0</Parameter>
+      <Parameter Name="BitSize">8</Parameter>
+      <Parameter Name="CycleTime [ms]">5</Parameter>
+      <Parameter Name="Transmode">3</Parameter>
+      <Parameter Name="Timeout [ms]">1000</Parameter>
+      <Parameter Name="TCBufferSize [Samples]">10</Parameter>
+      <Parameter Name="LVBufferSize [Samples]">50</Parameter>
+      <Parameter Name="Expected min delay [ms]">250</Parameter>
+    </Parameters>
+  </SymbolControlItem>
+  <SymbolControlItem GroupName="ADS Read" GroupDescription="Parameters for ADS Read command">
+    <Parameters>
+      <Parameter Name="Name">GVL_LabviewDataShare.out_bBeckhoffHandshakeBit_labview</Parameter>
+      <Parameter Name="SymbolName">GVL_LabviewDataShare.out_bBeckhoffHandshakeBit_labview</Parameter>
+      <Parameter Name="SymbolType">BOOL</Parameter>
+      <Parameter Name="SymbolGuid">
+      </Parameter>
+      <Parameter Name="AmsNetId">192.168.0.20.1.1</Parameter>
+      <Parameter Name="Port">851</Parameter>
+      <Parameter Name="IndexGroup">#x0</Parameter>
+      <Parameter Name="IndexOffset">#x0</Parameter>
+      <Parameter Name="BitSize">8</Parameter>
+      <Parameter Name="CycleTime [ms]">5</Parameter>
+      <Parameter Name="Transmode">3</Parameter>
+      <Parameter Name="Timeout [ms]">1000</Parameter>
+      <Parameter Name="TCBufferSize [Samples]">10</Parameter>
+      <Parameter Name="LVBufferSize [Samples]">50</Parameter>
+      <Parameter Name="Expected min delay [ms]">250</Parameter>
+    </Parameters>
+  </SymbolControlItem>
+  <SymbolControlItem GroupName="ADS Read" GroupDescription="Parameters for ADS Read command">
+    <Parameters>
+      <Parameter Name="Name">GVL_LabviewDataShare.out_bDualAsic_labview</Parameter>
+      <Parameter Name="SymbolName">GVL_LabviewDataShare.out_bDualAsic_labview</Parameter>
+      <Parameter Name="SymbolType">BOOL</Parameter>
+      <Parameter Name="SymbolGuid">
+      </Parameter>
+      <Parameter Name="AmsNetId">192.168.0.20.1.1</Parameter>
+      <Parameter Name="Port">851</Parameter>
+      <Parameter Name="IndexGroup">#x0</Parameter>
+      <Parameter Name="IndexOffset">#x0</Parameter>
+      <Parameter Name="BitSize">8</Parameter>
+      <Parameter Name="CycleTime [ms]">5</Parameter>
+      <Parameter Name="Transmode">3</Parameter>
+      <Parameter Name="Timeout [ms]">1000</Parameter>
+      <Parameter Name="TCBufferSize [Samples]">10</Parameter>
+      <Parameter Name="LVBufferSize [Samples]">50</Parameter>
+      <Parameter Name="Expected min delay [ms]">250</Parameter>
+    </Parameters>
+  </SymbolControlItem>
+  <SymbolControlItem GroupName="ADS Read" GroupDescription="Parameters for ADS Read command">
+    <Parameters>
+      <Parameter Name="Name">GVL_LabviewDataShare.out_bInitializeStartupRoutine</Parameter>
+      <Parameter Name="SymbolName">GVL_LabviewDataShare.out_bInitializeStartupRoutine</Parameter>
+      <Parameter Name="SymbolType">BOOL</Parameter>
+      <Parameter Name="SymbolGuid">
+      </Parameter>
+      <Parameter Name="AmsNetId">192.168.0.20.1.1</Parameter>
+      <Parameter Name="Port">851</Parameter>
+      <Parameter Name="IndexGroup">#x0</Parameter>
+      <Parameter Name="IndexOffset">#x0</Parameter>
+      <Parameter Name="BitSize">8</Parameter>
+      <Parameter Name="CycleTime [ms]">5</Parameter>
+      <Parameter Name="Transmode">3</Parameter>
+      <Parameter Name="Timeout [ms]">1000</Parameter>
+      <Parameter Name="TCBufferSize [Samples]">10</Parameter>
+      <Parameter Name="LVBufferSize [Samples]">50</Parameter>
+      <Parameter Name="Expected min delay [ms]">250</Parameter>
+    </Parameters>
+  </SymbolControlItem>
+  <SymbolControlItem GroupName="ADS Read" GroupDescription="Parameters for ADS Read command">
+    <Parameters>
+      <Parameter Name="Name">GVL_LabviewDataShare.out_bInitializeStartupRoutine_labview</Parameter>
+      <Parameter Name="SymbolName">GVL_LabviewDataShare.out_bInitializeStartupRoutine_labview</Parameter>
+      <Parameter Name="SymbolType">BOOL</Parameter>
+      <Parameter Name="SymbolGuid">
+      </Parameter>
+      <Parameter Name="AmsNetId">192.168.0.20.1.1</Parameter>
+      <Parameter Name="Port">851</Parameter>
+      <Parameter Name="IndexGroup">#x0</Parameter>
+      <Parameter Name="IndexOffset">#x0</Parameter>
+      <Parameter Name="BitSize">8</Parameter>
+      <Parameter Name="CycleTime [ms]">5</Parameter>
+      <Parameter Name="Transmode">3</Parameter>
+      <Parameter Name="Timeout [ms]">1000</Parameter>
+      <Parameter Name="TCBufferSize [Samples]">10</Parameter>
+      <Parameter Name="LVBufferSize [Samples]">50</Parameter>
+      <Parameter Name="Expected min delay [ms]">250</Parameter>
+    </Parameters>
+  </SymbolControlItem>
+  <SymbolControlItem GroupName="ADS Read" GroupDescription="Parameters for ADS Read command">
+    <Parameters>
+      <Parameter Name="Name">GVL_LabviewDataShare.out_bMasterSequenceActive_labview</Parameter>
+      <Parameter Name="SymbolName">GVL_LabviewDataShare.out_bMasterSequenceActive_labview</Parameter>
+      <Parameter Name="SymbolType">BOOL</Parameter>
+      <Parameter Name="SymbolGuid">
+      </Parameter>
+      <Parameter Name="AmsNetId">192.168.0.20.1.1</Parameter>
+      <Parameter Name="Port">851</Parameter>
+      <Parameter Name="IndexGroup">#x0</Parameter>
+      <Parameter Name="IndexOffset">#x0</Parameter>
+      <Parameter Name="BitSize">8</Parameter>
+      <Parameter Name="CycleTime [ms]">5</Parameter>
+      <Parameter Name="Transmode">3</Parameter>
+      <Parameter Name="Timeout [ms]">1000</Parameter>
+      <Parameter Name="TCBufferSize [Samples]">10</Parameter>
+      <Parameter Name="LVBufferSize [Samples]">50</Parameter>
+      <Parameter Name="Expected min delay [ms]">250</Parameter>
+    </Parameters>
+  </SymbolControlItem>
+  <SymbolControlItem GroupName="ADS Read" GroupDescription="Parameters for ADS Read command">
+    <Parameters>
+      <Parameter Name="Name">GVL_LabviewDataShare.out_bRestLabviewRoutine_labview</Parameter>
+      <Parameter Name="SymbolName">GVL_LabviewDataShare.out_bRestLabviewRoutine_labview</Parameter>
+      <Parameter Name="SymbolType">BOOL</Parameter>
+      <Parameter Name="SymbolGuid">
+      </Parameter>
+      <Parameter Name="AmsNetId">192.168.0.20.1.1</Parameter>
+      <Parameter Name="Port">851</Parameter>
+      <Parameter Name="IndexGroup">#x0</Parameter>
+      <Parameter Name="IndexOffset">#x0</Parameter>
+      <Parameter Name="BitSize">8</Parameter>
+      <Parameter Name="CycleTime [ms]">5</Parameter>
+      <Parameter Name="Transmode">3</Parameter>
+      <Parameter Name="Timeout [ms]">1000</Parameter>
+      <Parameter Name="TCBufferSize [Samples]">10</Parameter>
+      <Parameter Name="LVBufferSize [Samples]">50</Parameter>
+      <Parameter Name="Expected min delay [ms]">250</Parameter>
+    </Parameters>
+  </SymbolControlItem>
+  <SymbolControlItem GroupName="ADS Read" GroupDescription="Parameters for ADS Read command">
+    <Parameters>
+      <Parameter Name="Name">GVL_LabviewDataShare.out_strDeviceID_labview</Parameter>
+      <Parameter Name="SymbolName">GVL_LabviewDataShare.out_strDeviceID_labview</Parameter>
+      <Parameter Name="SymbolType">STRING(80)</Parameter>
+      <Parameter Name="SymbolGuid">
+      </Parameter>
+      <Parameter Name="AmsNetId">192.168.0.20.1.1</Parameter>
+      <Parameter Name="Port">851</Parameter>
+      <Parameter Name="IndexGroup">#x0</Parameter>
+      <Parameter Name="IndexOffset">#x0</Parameter>
+      <Parameter Name="BitSize">648</Parameter>
+      <Parameter Name="CycleTime [ms]">5</Parameter>
+      <Parameter Name="Transmode">3</Parameter>
+      <Parameter Name="Timeout [ms]">1000</Parameter>
+      <Parameter Name="TCBufferSize [Samples]">10</Parameter>
+      <Parameter Name="LVBufferSize [Samples]">50</Parameter>
+      <Parameter Name="Expected min delay [ms]">250</Parameter>
+    </Parameters>
+  </SymbolControlItem>
+  <SymbolControlItem GroupName="ADS Read" GroupDescription="Parameters for ADS Read command">
+    <Parameters>
+      <Parameter Name="Name">GVL_LabviewDataShare.out_strLotNo_labview</Parameter>
+      <Parameter Name="SymbolName">GVL_LabviewDataShare.out_strLotNo_labview</Parameter>
+      <Parameter Name="SymbolType">STRING(80)</Parameter>
+      <Parameter Name="SymbolGuid">
+      </Parameter>
+      <Parameter Name="AmsNetId">192.168.0.20.1.1</Parameter>
+      <Parameter Name="Port">851</Parameter>
+      <Parameter Name="IndexGroup">#x0</Parameter>
+      <Parameter Name="IndexOffset">#x0</Parameter>
+      <Parameter Name="BitSize">648</Parameter>
+      <Parameter Name="CycleTime [ms]">5</Parameter>
+      <Parameter Name="Transmode">3</Parameter>
+      <Parameter Name="Timeout [ms]">1000</Parameter>
+      <Parameter Name="TCBufferSize [Samples]">10</Parameter>
+      <Parameter Name="LVBufferSize [Samples]">50</Parameter>
+      <Parameter Name="Expected min delay [ms]">250</Parameter>
+    </Parameters>
+  </SymbolControlItem>
+  <SymbolControlItem GroupName="ADS Read" GroupDescription="Parameters for ADS Read command">
+    <Parameters>
+      <Parameter Name="Name">GVL_LabviewDataShare.out_bAbortCalibrationSequence_labview</Parameter>
+      <Parameter Name="SymbolName">GVL_LabviewDataShare.out_bAbortCalibrationSequence_labview</Parameter>
+      <Parameter Name="SymbolType">BOOL</Parameter>
+      <Parameter Name="SymbolGuid">
+      </Parameter>
+      <Parameter Name="AmsNetId">192.168.0.20.1.1</Parameter>
+      <Parameter Name="Port">851</Parameter>
+      <Parameter Name="IndexGroup">#x0</Parameter>
+      <Parameter Name="IndexOffset">#x0</Parameter>
+      <Parameter Name="BitSize">8</Parameter>
+      <Parameter Name="CycleTime [ms]">5</Parameter>
+      <Parameter Name="Transmode">3</Parameter>
+      <Parameter Name="Timeout [ms]">1000</Parameter>
+      <Parameter Name="TCBufferSize [Samples]">10</Parameter>
+      <Parameter Name="LVBufferSize [Samples]">50</Parameter>
+      <Parameter Name="Expected min delay [ms]">250</Parameter>
+    </Parameters>
+  </SymbolControlItem>
+</SymbolControlItems>

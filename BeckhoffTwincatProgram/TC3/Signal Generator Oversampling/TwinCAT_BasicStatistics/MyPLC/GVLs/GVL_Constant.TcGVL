@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.6">
+  <GVL Name="GVL_Constant" Id="{8ad23c1e-e36f-44f4-a5ae-3dcc06a8cad5}">
+    <Declaration><![CDATA[VAR_GLOBAL CONSTANT
+	
+	// input definition
+	cChannels		: UDINT 	:= 4;    // number of input channels
+	cOversamples 	: UDINT 	:= 10;	 // oversamples from input terminal
+	
+	// pupulation for statistical calculations
+	cPupulation 	: UDINT     := 6000;	
+	
+	// Source MultiArray
+	cBufferLength : UDINT := 100; 
+	
+	// wait for cAppendData MultiArrays with cBufferLength Elements before calculating | Elements in total = cPupulation 
+	cAppendData     : UDINT := cPupulation/cBufferLength;
+	
+END_VAR]]></Declaration>
+  </GVL>
+</TcPlcObject>

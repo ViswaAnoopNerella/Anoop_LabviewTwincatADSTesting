@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.6">
+  <POU Name="MAIN" Id="{b1765740-c030-4efc-a618-d284e595e73e}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM MAIN
+
+VAR
+	fbNoiseGeneratorCh1		: FB_NoiseGenerator;		// Signal Generator
+	fbNoiseGeneratorCh2		: FB_NoiseGenerator;		// Signal Generator	
+	fbFunctionGeneratorCh3	: FB_FunctionGenerator;		// Sine Signal Generator	
+	fbFunctionGeneratorCh4	: FB_FunctionGenerator;		// AM Signal Generator
+	fbFunctionGeneratorCh5	: FB_FunctionGenerator;		// Square Signal Generator
+	fbFunctionGeneratorCh6	: FB_FunctionGenerator;		// Pulse Signal Generator
+	
+	aNoise_1 : ARRAY[1..cOversamples] OF LREAL;
+	aNoise_2 : ARRAY[1..cOversamples] OF LREAL;
+	aSine : ARRAY[1..cOversamples] OF LREAL;
+	aAM : ARRAY[1..cOversamples] OF LREAL;
+	aSquare : ARRAY[1..cOversamples] OF LREAL;
+	aPulse : ARRAY[1..cOversamples] OF LREAL;
+	
+	nStartSeed		: INT := 1;	
+	aNormDisp		: ARRAY [1..2] OF LREAL := [1,3];	// mean = 1, std = 3
+	aGammaDisp      : ARRAY [1..2] OF LREAL := [4,0];   // DOF = 4
+	fSetFrequency	: LREAL := 40;						// Hz
+	fSetAmplitude	: LREAL := 10;						// peak amplitude of sine signal
+		
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[// Generate test signals
+// Ch1: Normal distribution
+// Ch2: Gamma distribution
+// Ch3: Sine signal
+// Ch4: Triangular signal
+fbNoiseGeneratorCh1(	nSeed 		:= nStartSeed,
+						aParam 		:= aNormDisp,
+						eDistrType	:= E_DistributionType.Normal,								
+						aSignal		:= aNoise_1 );	
+fbNoiseGeneratorCh2(	nSeed 		:= nStartSeed,
+						aParam 		:= aGammaDisp,
+						eDistrType	:= E_DistributionType.Gamma,								
+						aSignal		:= aNoise_2 );									
+fbFunctionGeneratorCh3(	fFrequency 	:= fSetFrequency,
+						fAmplitude 	:= fSetAmplitude,
+						fOffset		:= 0,
+						eFunction 	:= E_FunctionType.Sine,							
+						aSignal		:= aSine );
+fbFunctionGeneratorCh4(	fFrequency 	:= fSetFrequency,
+						fAmplitude 	:= fSetAmplitude,
+						fOffset 	:= 0,
+						eFunction	:= E_FunctionType.AM,
+						aSignal 	:= aAM);
+fbFunctionGeneratorCh5(	fFrequency 	:= fSetFrequency,
+						fAmplitude 	:= fSetAmplitude,
+						fOffset 	:= 0,
+						eFunction	:= E_FunctionType.Square,
+						aSignal 	:= aSquare);
+fbFunctionGeneratorCh6(	fFrequency 	:= fSetFrequency,
+						fAmplitude 	:= fSetAmplitude,
+						fOffset 	:= 0,
+						eFunction	:= E_FunctionType.Pulse,
+						aSignal 	:= aPulse);]]></ST>
+    </Implementation>
+    <LineIds Name="MAIN">
+      <LineId Id="11" Count="0" />
+      <LineId Id="81" Count="2" />
+      <LineId Id="194" Count="0" />
+      <LineId Id="162" Count="3" />
+      <LineId Id="167" Count="3" />
+      <LineId Id="172" Count="3" />
+      <LineId Id="55" Count="0" />
+      <LineId Id="195" Count="0" />
+      <LineId Id="197" Count="1" />
+      <LineId Id="200" Count="0" />
+      <LineId Id="199" Count="0" />
+      <LineId Id="210" Count="3" />
+      <LineId Id="209" Count="0" />
+      <LineId Id="217" Count="3" />
+      <LineId Id="216" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>
