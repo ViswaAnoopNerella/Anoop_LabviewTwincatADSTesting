@@ -17,13 +17,14 @@
 			<Item Name="Notifications-Events OverSampling x86.vi" Type="VI" URL="../Notifications-Events OverSampling x86.vi"/>
 		</Item>
 		<Item Name="TwincatADSLibrary" Type="Folder">
+			<Item Name="AnoopReadVarsExample.vi" Type="VI" URL="../TwincatADSVI&apos;s/AnoopReadVarsExample.vi"/>
+			<Item Name="AnoopReadWriteVarsExample.vi" Type="VI" URL="../TwincatADSVI&apos;s/AnoopReadWriteVarsExample.vi"/>
 			<Item Name="Read-Async-with-TypeResolving-Sensata.vi" Type="VI" URL="../TwincatADSVI&apos;s/Read-Async-with-TypeResolving-Sensata.vi"/>
 			<Item Name="ReadMultipleSymbols_Sensata.vi" Type="VI" URL="../TwincatADSVI&apos;s/ReadMultipleSymbols_Sensata.vi"/>
 			<Item Name="Write-Async-with-TypeResolving-Sensata.vi" Type="VI" URL="../TwincatADSVI&apos;s/Write-Async-with-TypeResolving-Sensata.vi"/>
 			<Item Name="Write-Sync-Multiple-TypeResolving-Sensata.vi" Type="VI" URL="../TwincatADSVI&apos;s/Write-Sync-Multiple-TypeResolving-Sensata.vi"/>
 			<Item Name="Write-Sync-with-TypeResolving-Sensata.vi" Type="VI" URL="../TwincatADSVI&apos;s/Write-Sync-with-TypeResolving-Sensata.vi"/>
 		</Item>
-		<Item Name="TF3710LibExample.vi" Type="VI" URL="../TwincatADSVI&apos;s/TF3710LibExample.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="instr.lib" Type="Folder">
 				<Item Name="TcAdsLv.dll" Type="Document" URL="/&lt;instrlib&gt;/_Ackermann Automation/TwinCAT Ads Library/Dlls/TcAdsLv.dll"/>
