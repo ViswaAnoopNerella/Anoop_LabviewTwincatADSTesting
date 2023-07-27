@@ -5,12 +5,12 @@
   <Children>
     <Node>
       <Title>TC Signals</Title>
-      <Expanded>False</Expanded>
-      <FileName>C:\MSDApps\GitHub Projects\Sensata-Global-Mechanization\EDPTesting\TF3710_TC3_Labview\Application Example\TC3\Signal Generator Oversampling\TwinCAT Measurement Project1\TC Signals.tcscopex</FileName>
+      <Expanded>True</Expanded>
+      <FileName>C:\MSDApps\GitHub-Projects\ViswaAnoopNerella\Anoop_LabviewTwincatADSTesting\BeckhoffTwincatProgram\TC3\Signal Generator Oversampling\TwinCAT Measurement Project1\TC Signals.tcscopex</FileName>
       <Children>
         <Node>
           <Title>DataPool</Title>
-          <Expanded>False</Expanded>
+          <Expanded>True</Expanded>
           <FileName></FileName>
           <Children>
             <Node>
@@ -41,12 +41,12 @@
         </Node>
         <Node>
           <Title>Signal 1</Title>
-          <Expanded>False</Expanded>
+          <Expanded>True</Expanded>
           <FileName></FileName>
           <Children>
             <Node>
               <Title>Sine</Title>
-              <Expanded>False</Expanded>
+              <Expanded>True</Expanded>
               <FileName></FileName>
               <Children>
                 <Node>
@@ -73,12 +73,12 @@
         </Node>
         <Node>
           <Title>Signal 2</Title>
-          <Expanded>False</Expanded>
+          <Expanded>True</Expanded>
           <FileName></FileName>
           <Children>
             <Node>
               <Title>AM</Title>
-              <Expanded>False</Expanded>
+              <Expanded>True</Expanded>
               <FileName></FileName>
               <Children>
                 <Node>
@@ -105,7 +105,7 @@
         </Node>
         <Node>
           <Title>Array Bar Chart</Title>
-          <Expanded>False</Expanded>
+          <Expanded>True</Expanded>
           <FileName></FileName>
           <Children>
             <Node>
