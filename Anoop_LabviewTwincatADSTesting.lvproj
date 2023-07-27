@@ -23,7 +23,9 @@
 			<Item Name="ReadDataFromBeckhoff.vi" Type="VI" URL="../TwincatADSVI&apos;s/ReadDataFromBeckhoff.vi"/>
 			<Item Name="ReadMultipleSymbols_Sensata.vi" Type="VI" URL="../TwincatADSVI&apos;s/ReadMultipleSymbols_Sensata.vi"/>
 			<Item Name="SendCalResultsToBeckhoff.vi" Type="VI" URL="../TwincatADSVI&apos;s/SendCalResultsToBeckhoff.vi"/>
+			<Item Name="SendCalStatusUpdateToBeckhoff.vi" Type="VI" URL="../TwincatADSVI&apos;s/SendCalStatusUpdateToBeckhoff.vi"/>
 			<Item Name="SendFFTResultsToBeckhoff.vi" Type="VI" URL="../TwincatADSVI&apos;s/SendFFTResultsToBeckhoff.vi"/>
+			<Item Name="SendFFTStatusUpdateToBeckhoff.vi" Type="VI" URL="../TwincatADSVI&apos;s/SendFFTStatusUpdateToBeckhoff.vi"/>
 			<Item Name="SendHardwareErrorStatus.vi" Type="VI" URL="../TwincatADSVI&apos;s/SendHardwareErrorStatus.vi"/>
 			<Item Name="SendHardwareResetStatus.vi" Type="VI" URL="../TwincatADSVI&apos;s/SendHardwareResetStatus.vi"/>
 			<Item Name="SendStartUpInitStatus.vi" Type="VI" URL="../TwincatADSVI&apos;s/SendStartUpInitStatus.vi"/>
