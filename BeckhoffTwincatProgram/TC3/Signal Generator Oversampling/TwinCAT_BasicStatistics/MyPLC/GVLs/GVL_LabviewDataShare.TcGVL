@@ -32,7 +32,7 @@ VAR_GLOBAL
     out_bInitializeStartupRoutine_labview : BOOL;
 
     // Beckhoff to Labview MQTT Info Transfer - This bit is to indicate that machine is in reset state routine
-    out_bRestLabviewRoutine_labview : BOOL;
+    out_bResetLabviewRoutine_labview : BOOL;
 
     // Labview to Beckhoff MQTT Info Transfer - Asic 1 Serial No.
     in_strAsic1SerialNo_labview : STRING;

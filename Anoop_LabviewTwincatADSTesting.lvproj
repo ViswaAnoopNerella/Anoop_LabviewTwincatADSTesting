@@ -20,7 +20,13 @@
 			<Item Name="AnoopReadVarsExample.vi" Type="VI" URL="../TwincatADSVI&apos;s/AnoopReadVarsExample.vi"/>
 			<Item Name="AnoopReadWriteVarsExample.vi" Type="VI" URL="../TwincatADSVI&apos;s/AnoopReadWriteVarsExample.vi"/>
 			<Item Name="Read-Async-with-TypeResolving-Sensata.vi" Type="VI" URL="../TwincatADSVI&apos;s/Read-Async-with-TypeResolving-Sensata.vi"/>
+			<Item Name="ReadDataFromBeckhoff.vi" Type="VI" URL="../TwincatADSVI&apos;s/ReadDataFromBeckhoff.vi"/>
 			<Item Name="ReadMultipleSymbols_Sensata.vi" Type="VI" URL="../TwincatADSVI&apos;s/ReadMultipleSymbols_Sensata.vi"/>
+			<Item Name="SendCalResultsToBeckhoff.vi" Type="VI" URL="../TwincatADSVI&apos;s/SendCalResultsToBeckhoff.vi"/>
+			<Item Name="SendFFTResultsToBeckhoff.vi" Type="VI" URL="../TwincatADSVI&apos;s/SendFFTResultsToBeckhoff.vi"/>
+			<Item Name="SendHardwareErrorStatus.vi" Type="VI" URL="../TwincatADSVI&apos;s/SendHardwareErrorStatus.vi"/>
+			<Item Name="SendHardwareResetStatus.vi" Type="VI" URL="../TwincatADSVI&apos;s/SendHardwareResetStatus.vi"/>
+			<Item Name="SendStartUpInitStatus.vi" Type="VI" URL="../TwincatADSVI&apos;s/SendStartUpInitStatus.vi"/>
 			<Item Name="Write-Async-with-TypeResolving-Sensata.vi" Type="VI" URL="../TwincatADSVI&apos;s/Write-Async-with-TypeResolving-Sensata.vi"/>
 			<Item Name="Write-Sync-Multiple-TypeResolving-Sensata.vi" Type="VI" URL="../TwincatADSVI&apos;s/Write-Sync-Multiple-TypeResolving-Sensata.vi"/>
 			<Item Name="Write-Sync-with-TypeResolving-Sensata.vi" Type="VI" URL="../TwincatADSVI&apos;s/Write-Sync-with-TypeResolving-Sensata.vi"/>
